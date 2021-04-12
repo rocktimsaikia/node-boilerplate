@@ -1,0 +1,45 @@
+{
+	"name": "PACKAGE-NAME",
+	"version": "0.0.0",
+	"description": "My awesome module",
+	"license": "MIT",
+	"repository": "YOUR-GITHUB-USERNAME/PACKAGE-NAME",
+	"author": {
+		"name": "YOUR NAME",
+		"email": "YOUR EMAIL",
+		"url": "YOUR WEBSITE"
+	},
+	"type": "module",
+	"exports": "./src/index.js",
+	"engines": {
+		"node": ">=12"
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"test": "jest .",
+		"prepublishOnly": "npm run test"
+	},
+	"files": [
+		"src/**/*"
+	],
+	"types": "src/index.d.ts",
+	"keywords": [
+		"unicorn",
+		"fun"
+	],
+	"devDependencies": {
+		"@babel/preset-env": "^7.13.15",
+		"@types/jest": "^26.0.22",
+		"babel-jest": "^26.6.3",
+		"eslint": "7.2.0",
+		"eslint-config-airbnb-base": "14.2.1",
+		"eslint-plugin-import": "2.22.1",
+		"jest": "^26.6.3",
+		"jest-extended": "^0.11.5"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.jsx?$": "babel-jest"
+		}
+	}
+}
