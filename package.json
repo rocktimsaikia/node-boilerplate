@@ -17,6 +17,7 @@
 	"scripts": {
 		"lint": "eslint .",
 		"test": "jest .",
+		"test:ex": "node example",
 		"prepublishOnly": "npm run test"
 	},
 	"files": [
