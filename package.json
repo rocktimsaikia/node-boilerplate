@@ -17,8 +17,9 @@
 	"scripts": {
 		"lint": "eslint .",
 		"test": "jest .",
-		"prepublishOnly": "npm run test",
-		"prepare": "husky install"
+		"postinstall": "husky install",
+		"prepublishOnly": "pinst --disable",
+		"postpublish": "pinst --enable"
 	},
 	"files": [
 		"src/**/*"
@@ -36,9 +37,10 @@
 		"eslint": "7.2.0",
 		"eslint-config-airbnb-base": "14.2.1",
 		"eslint-plugin-import": "2.22.1",
+		"husky": "^6.0.0",
 		"jest": "^26.6.3",
 		"jest-extended": "^0.11.5",
-		"husky": "^6.0.0"
+		"pinst": "^2.1.6"
 	},
 	"jest": {
 		"transform": {
