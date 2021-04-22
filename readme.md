@@ -1,17 +1,17 @@
-# awesome-module [![Build Status](https://github.com/rocktimsaikia/node-boilerplate/workflows/CI/badge.svg?branch=main)](https://github.com/rocktimsaikia/node-boilerplate/actions?query=branch%3Amain+workflow%3ACI)
+# YOUR_PACKAGE_NAME [![Build Status](https://github.com/rocktimsaikia/node-boilerplate/workflows/CI/badge.svg?branch=main)](https://github.com/rocktimsaikia/node-boilerplate/actions?query=branch%3Amain+workflow%3ACI)
 
 > Awesome module description and there is also a unicorn here :unicorn:
 
 ## Install
 
 ```bash
-npm install awesome-module
+npm install YOUR_PACKAGE_NAME
 ```
 
 ## Usage
 
 ```js
-const unicornFun = require("awesome-module");
+const unicornFun = require("YOUR_PACKAGE_NAME");
 
 unicornFun("unicorns");
 //=> 'unicorns & rainbows'
@@ -19,7 +19,7 @@ unicornFun("unicorns");
 
 ## API
 
-### awesomeUnicorn(options?)
+### unicornFun(options?)
 
 Takes one unicorn and returns two. Awesome stuff!!
 
@@ -32,4 +32,4 @@ Default: `2`
 
 ## License
 
-MIT 2020 © [Rocktim Saikia](https://rocktimsaikia.now.sh/)
+MIT 2021 © [YOUR_NAME](YOUR_WEBSITE)
