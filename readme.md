@@ -1,6 +1,6 @@
 # YOUR_PACKAGE_NAME [![Build Status](https://github.com/rocktimsaikia/node-boilerplate/workflows/CI/badge.svg?branch=main)](https://github.com/rocktimsaikia/node-boilerplate/actions?query=branch%3Amain+workflow%3ACI)
 
-> Awesome module description and there is also a unicorn here :unicorn:
+> Your module description goes here
 
 ## Install
 
