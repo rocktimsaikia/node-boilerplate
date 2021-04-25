@@ -1,12 +1,12 @@
-import unicornFun from '../src';
+import add from '../src';
 
 describe('Main', () => {
   it('should throw an TypeError', () => {
-    expect(() => unicornFun(123)).toThrowError(TypeError);
-    expect(() => unicornFun(123)).toThrowError(/expected a string, got number/i);
+    expect(() => add('2', 2)).toThrowError(TypeError);
+    expect(() => add('2', 2)).toThrowError(/expected type number, got string/i);
   });
 
-  it('should return the `unicorn & rainbows`', () => {
-    expect(unicornFun('unicorn')).toBe('unicorn & rainbows');
+  it('should return the 4', async () => {
+    expect(add(2, 2)).toBe(4);
   });
 });

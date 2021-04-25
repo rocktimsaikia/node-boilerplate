@@ -1,9 +1,9 @@
-const unicornFun = (input, { postfix = 'rainbows' } = {}) => {
-  if (typeof input !== 'string') {
-    throw new TypeError(`Expected a string, got ${typeof input}`);
+const add = (num1, num2) => {
+  if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+    throw new TypeError(`Expected type number, got ${typeof num1}`);
   }
 
-  return `${input} & ${postfix}`;
+  return num1 + num2;
 };
 
-export default unicornFun;
+export default add;
