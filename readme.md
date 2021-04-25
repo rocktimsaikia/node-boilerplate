@@ -21,7 +21,12 @@ A brief description of what this project does and who it's for.
 Install my-project with npm
 
 ```bash 
-  npm install my-project
+npm install my-project
+```
+or, with yarn
+
+```bash
+yarn add my-project
 ```
     
 
