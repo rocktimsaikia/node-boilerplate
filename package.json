@@ -2,8 +2,12 @@
 	"name": "PACKAGE-NAME",
 	"version": "0.0.0",
 	"description": "My awesome module",
-	"license": "MIT",
+	"keywords": [
+		"unicorn",
+		"fun"
+	],
 	"repository": "YOUR-GITHUB-USERNAME/PACKAGE-NAME",
+	"license": "MIT",
 	"author": {
 		"name": "YOUR NAME",
 		"email": "YOUR EMAIL",
@@ -11,9 +15,10 @@
 	},
 	"type": "module",
 	"exports": "./src/index.js",
-	"engines": {
-		"node": ">=12"
-	},
+	"types": "src/index.d.ts",
+	"files": [
+		"src"
+	],
 	"scripts": {
 		"lint": "eslint .",
 		"test": "jest",
@@ -21,30 +26,25 @@
 		"prepublishOnly": "pinst --disable",
 		"postpublish": "pinst --enable"
 	},
-	"files": [
-		"src/**/*"
-	],
-	"types": "src/index.d.ts",
-	"keywords": [
-		"unicorn",
-		"fun"
-	],
+	"jest": {
+		"testTimeout": 30000,
+		"transform": {
+			"\\.[jt]s?$": "babel-jest"
+		}
+	},
 	"devDependencies": {
 		"@babel/plugin-transform-modules-commonjs": "^7.13.8",
 		"@types/jest": "^26.0.22",
-		"jest": "^26.6.3",
 		"babel-jest": "^26.6.3",
-		"jest-extended": "^0.11.5",
 		"eslint": "7.2.0",
 		"eslint-config-airbnb-base": "14.2.1",
 		"eslint-plugin-import": "2.22.1",
 		"husky": "^6.0.0",
+		"jest": "^26.6.3",
+		"jest-extended": "^0.11.5",
 		"pinst": "^2.1.6"
 	},
-	"jest": {
-		"transform": {
-			"\\.[jt]s?$": "babel-jest"
-		},
-		"testTimeout": 30000
+	"engines": {
+		"node": ">=12"
 	}
 }
